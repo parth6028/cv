@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex-basis: calc(33.333% - 1rem);
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="me.jpg" alt="A picture of me">
+            <p>I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and various frameworks and libraries.</p>
+        </section>
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <ul>
+                <li>
+                    <a href="project1.html">
+                        <img src="project1.jpg" alt="A screenshot of Project 1">
+                        <h3>Project 1</h3>
+                        <p>A brief description of Project 1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="project2.html">
+                        <img src="project2.jpg" alt="A screenshot of Project 2">
+                        <h3>Project 2</h3>
+                        <p>A brief description of Project 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="project3.html">
+                        <img src="project3.jpg" alt="A screenshot of Project 3">
+                        <h3>Project 3</h3>
+                        <p>A brief description of Project 3</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>If you're interested in working together or just want to say hi, feel free to reach out.</p>
+            <form action="mailto:you@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
